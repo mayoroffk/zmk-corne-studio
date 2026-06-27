@@ -1,8 +1,15 @@
 include:
   - board: nice_nano//zmk
-    shield: corne_left
+    shield: mriya_left nice_view_adapter
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano//zmk
+    shield: mriya_right nice_view_adapter
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: xiao_ble//zmk
+    shield: mriya_dongle prospector_adapter
     snippet: studio-rpc-usb-uart
   - board: nice_nano//zmk
-    shield: corne_right
+    shield: settings_reset
   - board: xiao_ble//zmk
-    shield: prospector_adapter
+    shield: settings_reset
+
