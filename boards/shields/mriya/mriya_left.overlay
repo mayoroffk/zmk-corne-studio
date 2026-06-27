@@ -5,6 +5,7 @@
  */
 
 #include "mriya.dtsi"
+#include "mriya_displays.dtsi"
 
 &kscan0 {
     col-gpios
